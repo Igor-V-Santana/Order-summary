@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: hsl(225, 100%, 94%);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body img{
+    width: 100%;
+}
+
+.container {
+    min-width: 20%;
+    min-height: 70%;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.img img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+/*************** TEXT ***************/
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+}
+.text h3{
+    font-size: 1.5em;
+    margin-bottom: .8em;
+    color: hsl(223, 49%, 36%);
+}
+.text p{
+    font-size: 1em;
+    color: rgba(0,0,0,0.5);
+}
+
+.plan{
+    background: rgba(128, 128, 128, 0.068);
+    width: 90%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2em;
+    border-radius: 10px;
+}
+.plan img{
+    width: 15%;
+}
+.plan h3{
+    color: hsl(223, 49%, 36%);
+}
+.plan span{
+    color: rgba(0,0,0,0.6);
+}
+.plan-button a{
+    color: hsl(245, 75%, 52%);
+    font-weight: 800;
+}
+.plan-button a:hover{
+    opacity: 0.6;
+}
+
+
+
+/************ BUTTON **************/
+.input-button{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+}
+.input-button button{
+    width: 90%;
+    padding: 1.5em;
+    border-radius: 20px;
+    background: hsl(245, 75%, 52%);
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 1.2s;
+}
+.input-button button:hover{
+    opacity: 0.6;
+}
+.input-button a{
+    margin-top: 1em;
+    color: hsl(223, 49%, 36%);
+    text-decoration: none;
+}
+.input-button a:hover{
+    opacity: 0.6;
+}
+
+
+
+/*************** RESPONSIVO ****************/
+@media(max-width: 400px){
+    body{
+        background-image: url(images/pattern-background-mobile.svg);
+    }
+    .container{
+        width: 90%;
+        min-height: 90%;
+    }
+}
+
+@media(max-width: 280px){
+    .text p{
+        font-size: .8em;
+    }
+}
